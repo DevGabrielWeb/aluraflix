@@ -1,0 +1,130 @@
+:root {
+  --branco-principal: hsl(0, 0%, 100%);
+  --cinza-secundario: hsl(0, 0%, 75%);
+  --botao-azul: hsl(213, 93%, 53%);
+  --cor-de-fundo: hsl(225, 100%, 2%);
+  
+  --fonte-principal:'Inter';
+
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--branco-principal);
+  font-family: var(--fonte-principal);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+button{
+  display: block;
+}
+
+.principal{
+  background-image: url('./img/Background.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  text-align: center;
+}
+
+.container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+
+.container__botao{
+  background-color: var(--botao-azul);
+  color: var(--branco-principal);
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+  display: block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.botao__secundario{
+  background-color: transparent;
+  border: 2px solid var(--branco-principal)
+
+}
+.container__aviso{
+  font-size: 1.2rem;
+  color: var(--cinza-secundario);
+}
+.container__titulo{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.container__imagem{
+  margin: 2.4rem 0 5.4rem 0;
+}
+.container__caixa{
+  margin: 0 6rem;
+}
+.secundario__imagem{
+  width: 80%;
+}
+.secundario{
+  align-items: center;
+  margin: 0 10rem;
+}
+.descricao__titulo{
+  font-weight: 700;
+  font-size: 4.8rem;
+  color: var(--branco-principal);
+  margin-bottom: 0.1rem;
+}
+
+.descricao__texto{
+  color: var(--cinza-secundario);
+  text-align: left;
+}
+.secundario__botao{
+  display: inline-block;
+  margin-top: 1.6rem;
+}
+.container__descricao{
+  padding: 2rem;
+}
+.dispositivos{
+  text-align: center;
+  margin: 5rem 0rem;
+}
+.dispositivo__titulo{
+  font-weight: 700;
+  font-size: 4.8rem;
+  color: var(--branco-principal);
+  margin-bottom: 4.8rem;
+}
+li{
+  display: inline-block;
+  list-style-type: none;
+}
+.descricao__footer{
+  
+
+}
+.descricao__paragrafo{
+  color: var(--cinza-secundario);
+  text-align: center;
+  margin-bottom: 10rem;
+}
+footer{
+  text-align: center;
+}
+.footer__logo{
+  margin-bottom: 4rem;
+}
+
+footer p{
+  margin-bottom: 2rem;
+}
